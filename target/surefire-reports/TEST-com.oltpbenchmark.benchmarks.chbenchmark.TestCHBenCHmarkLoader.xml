@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.oltpbenchmark.benchmarks.chbenchmark.TestCHBenCHmarkLoader" time="0" errors="0" skipped="1">
+  <properties>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="git.commit.id.describe" value="8c7a9b7"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.io.serialization.extendedDebugInfo" value="true"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="21.0.4+7-Ubuntu-1ubuntu222.04"/>
+    <property name="user.name" value="root"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="user.language" value="zh"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="classworlds.conf" value="/root/.m2/wrapper/dists/apache-maven-3.8.4-bin/52ccbt68d252mdldqsfsn03jlf/apache-maven-3.8.4/bin/m2.conf"/>
+    <property name="git.build.user.name" value=""/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="git.local.branch.behind" value="0"/>
+    <property name="git.remote.origin.url" value="https://github.com/cmu-db/benchbase.git"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="git.build.version" value="2023-SNAPSHOT"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/root/.m2/wrapper/dists/apache-maven-3.8.4-bin/52ccbt68d252mdldqsfsn03jlf/apache-maven-3.8.4/conf"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="git.commit.message.full" value="Bump org.mariadb.jdbc:mariadb-java-client from 3.3.3 to 3.4.0 (#516)
+
+Bumps
+[org.mariadb.jdbc:mariadb-java-client](https://github.com/mariadb-corporation/mariadb-connector-j)
+from 3.3.3 to 3.4.0.
+&lt;details&gt;
+&lt;summary&gt;Changelog&lt;/summary&gt;
+&lt;p&gt;&lt;em&gt;Sourced from &lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/blob/master/CHANGELOG.md&quot;&gt;org.mariadb.jdbc:mariadb-java-client&apos;s
+changelog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/tree/3.4.0&quot;&gt;3.4.0&lt;/a&gt;
+(Apr 2024)&lt;/h2&gt;
+&lt;p&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/compare/3.3.3...3.4.0&quot;&gt;Full
+Changelog&lt;/a&gt;&lt;/p&gt;
+&lt;h5&gt;Notable Changes&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;CONJ-981 Add support for connection redirection&lt;/li&gt;
+&lt;li&gt;CONJ-1087 handle mariadb-11.1+ transaction_isolation&lt;/li&gt;
+&lt;li&gt;CONJ-1100 Be able to filter system tables and views&lt;/li&gt;
+&lt;li&gt;CONJ-1105 TLS certificate validation without needs to provide
+certificate client side&lt;/li&gt;
+&lt;li&gt;CONJ-1171 timezone support missing feature&lt;/li&gt;
+&lt;li&gt;CONJ-1173 Bulk implementation returning individual results for
+MariaDB 11.5&lt;/li&gt;
+&lt;li&gt;CONJ-1154 avoid unnecessary set transaction isolation queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Bugs Fixed&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;CONJ-1103 Connector/J Version 3 Does Not Respect
+&amp;quot;nullCatalogMeansCurrent&amp;quot; Property&lt;/li&gt;
+&lt;li&gt;CONJ-1161 Database connection failing on android&lt;/li&gt;
+&lt;li&gt;CONJ-1107 MariaDB Connector 3 no longer supports query timeout with
+MySQL&lt;/li&gt;
+&lt;li&gt;CONJ-1125 Inconsistency in Handling PreparedStatement.executeQuery()
+between MariaDB and MySQL Connectors&lt;/li&gt;
+&lt;li&gt;CONJ-1156 getTables should be ordered as expected&lt;/li&gt;
+&lt;li&gt;CONJ-1163 jdbcCompliantTruncation Does Not Appear To Be Working&lt;/li&gt;
+&lt;li&gt;CONJ-1164 Variable initialization ahead of LOAD DATA INFILE not
+possible by validateLocalFileName pattern&lt;/li&gt;
+&lt;li&gt;CONJ-1168 useBulkStmts compatibility value with pre 3.2 version&lt;/li&gt;
+&lt;li&gt;CONJ-1169 improve Client prepared statement setMaxRows
+implementation&lt;/li&gt;
+&lt;li&gt;CONJ-1170 OFFSET missing from getSQLKeywords&lt;/li&gt;
+&lt;li&gt;CONJ-1158 DatabaseMetaData#getFunctions&apos;s result not property
+ordered&lt;/li&gt;
+&lt;li&gt;CONJ-1159 DatabaseMetaData#getClientInfoProperties not ordered
+correctly&lt;/li&gt;
+&lt;li&gt;CONJ-1166 Implement connection properties fallbackToSystemKeyStore
+and fallbackToSystemTrustStore&lt;/li&gt;
+&lt;li&gt;CONJ-1174 ConnectorJ gives precision of 20 for signed bigint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;Commits&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/c19f608838fdcb18fa81cab8a607afdaa5131a58&quot;&gt;&lt;code&gt;c19f608&lt;/code&gt;&lt;/a&gt;
+[misc] code simplification&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/92d8414dd9e61fd68ee3b9d46c79f0b78a8f2332&quot;&gt;&lt;code&gt;92d8414&lt;/code&gt;&lt;/a&gt;
+Merge branch &apos;develop&apos;&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/474e9690f1e9c0b3bd66328c62f4551b9d378e6e&quot;&gt;&lt;code&gt;474e969&lt;/code&gt;&lt;/a&gt;
+bump 3.4.0&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/c9786f2c55ccfb8d8d6f80a982369f101420534e&quot;&gt;&lt;code&gt;c9786f2&lt;/code&gt;&lt;/a&gt;
+[CONJ-1173] Bulk implementation returning individual results&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/da506473bd4dafc45a0cf84b15aa6a2ac5a75b89&quot;&gt;&lt;code&gt;da50647&lt;/code&gt;&lt;/a&gt;
+[misc] metadata ensure correct join in case of using catalog in the
+future&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/4a0b526d67a1d851e81299365b45b041b7c71c90&quot;&gt;&lt;code&gt;4a0b526&lt;/code&gt;&lt;/a&gt;
+[CONJ-1171] ensure compatibility with 3.x current behavior&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/0a7a094ccbd23516a4c8a30455645ce2c387e8bc&quot;&gt;&lt;code&gt;0a7a094&lt;/code&gt;&lt;/a&gt;
+[CONJ-1174] wrong value for ResultSetMetaData.getPrecision() signed
+numeric&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/365d6a35e23ac87b9a9f38554ffafd627883bf5e&quot;&gt;&lt;code&gt;365d6a3&lt;/code&gt;&lt;/a&gt;
+[misc] avoid fallthrough warning&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/e0aff1e14dd76b77ec27ad838bea9718b769e885&quot;&gt;&lt;code&gt;e0aff1e&lt;/code&gt;&lt;/a&gt;
+[misc] avoid checking redirection for empty string value&lt;/li&gt;
+&lt;li&gt;&lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/commit/4567d3ba0d49ebb8501c953f753aae06c27d1423&quot;&gt;&lt;code&gt;4567d3b&lt;/code&gt;&lt;/a&gt;
+[CONJ-1171] timezone new options&lt;/li&gt;
+&lt;li&gt;Additional commits viewable in &lt;a
+href=&quot;https://github.com/mariadb-corporation/mariadb-connector-j/compare/3.3.3...3.4.0&quot;&gt;compare
+view&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;br /&gt;
+
+
+[![Dependabot compatibility
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=org.mariadb.jdbc:mariadb-java-client&amp;package-manager=maven&amp;previous-version=3.3.3&amp;new-version=3.4.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+You can trigger a rebase of this PR by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+&lt;details&gt;
+&lt;summary&gt;Dependabot commands and options&lt;/summary&gt;
+&lt;br /&gt;
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits
+that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after
+your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge
+and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating
+it. You can achieve the same result by closing it manually
+- `@dependabot show &lt;dependency name&gt; ignore conditions` will show all
+of the ignore conditions of the specified dependency
+- `@dependabot ignore this major version` will close this PR and stop
+Dependabot creating any more for this major version (unless you reopen
+the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop
+Dependabot creating any more for this minor version (unless you reopen
+the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop
+Dependabot creating any more for this dependency (unless you reopen the
+PR or upgrade to it yourself)
+
+
+&lt;/details&gt;
+
+&gt; **Note**
+&gt; Automatic rebases have been disabled on this pull request as it has
+been open for over 30 days.
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt;
+Co-authored-by: Brian Kroth &lt;bpkroth@users.noreply.github.com&gt;"/>
+    <property name="git.commit.message.short" value="Bump org.mariadb.jdbc:mariadb-java-client from 3.3.3 to 3.4.0 (#516)"/>
+    <property name="user.country" value="CN"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="git.closest.tag.name" value=""/>
+    <property name="os.version" value="5.15.0-78-generic"/>
+    <property name="git.build.host" value="autodl-container-84db4098e6-9902f4e1"/>
+    <property name="git.tags" value=""/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="21.0.4+7-Ubuntu-1ubuntu222.04"/>
+    <property name="git.local.branch.ahead" value="0"/>
+    <property name="git.commit.user.email" value="49699333+dependabot[bot]@users.noreply.github.com"/>
+    <property name="git.closest.tag.commit.count" value=""/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="git.commit.id.full" value="8c7a9b7491f2c984c5d7f15437b0b55979a61b83"/>
+    <property name="user.home" value="/root"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="git.dirty" value="false"/>
+    <property name="git.total.commit.count" value="2263"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="maven.home" value="/root/.m2/wrapper/dists/apache-maven-3.8.4-bin/52ccbt68d252mdldqsfsn03jlf/apache-maven-3.8.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.java.command" value="org.apache.maven.wrapper.MavenWrapperMain clean package -P postgres"/>
+    <property name="java.class.path" value="/home/benchbase/.mvn/wrapper/maven-wrapper.jar"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/benchbase"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="git.commit.id.describe-short" value="8c7a9b7"/>
+    <property name="user.dir" value="/home/benchbase"/>
+    <property name="git.commit.author.time" value="2024-07-17T01:04:06+0800"/>
+    <property name="line.separator" value="
+"/>
+    <property name="git.commit.committer.time" value="2024-07-17T01:04:06+0800"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="git.commit.user.name" value="dependabot[bot]"/>
+    <property name="git.commit.time" value="2024-07-17T01:04:06+0800"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="git.branch" value="main"/>
+    <property name="git.build.time" value="2024-09-16T13:09:38+0800"/>
+    <property name="java.specification.version" value="21"/>
+    <property name="git.build.user.email" value=""/>
+    <property name="git.commit.id.abbrev" value="8c7a9b7"/>
+  </properties>
+  <testcase classname="com.oltpbenchmark.benchmarks.chbenchmark.TestCHBenCHmarkLoader" name="com.oltpbenchmark.benchmarks.chbenchmark.TestCHBenCHmarkLoader" time="0">
+    <skipped message="the testcase is under development"/>
+  </testcase>
+</testsuite>
