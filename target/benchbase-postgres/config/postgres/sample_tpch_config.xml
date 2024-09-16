@@ -4,15 +4,15 @@
     <!-- Connection details -->
     <type>POSTGRES</type>
     <driver>org.postgresql.Driver</driver>
-    <url>jdbc:postgresql://localhost:5432/benchbase?sslmode=disable&amp;ApplicationName=tpch&amp;reWriteBatchedInserts=true</url>
-    <username>admin</username>
-    <password>password</password>
+    <url>jdbc:postgresql://localhost:5432/benchbase?sslmode=disable&amp;ApplicationName=tpch10g&amp;reWriteBatchedInserts=true</url>
+    <username>postgres</username>
+    <password>qwertyui</password>
     <reconnectOnConnectionFailure>true</reconnectOnConnectionFailure>
     <isolation>TRANSACTION_SERIALIZABLE</isolation>
     <batchsize>1024</batchsize>
 
     <!-- Control scale factor to generate different amount of data -->
-    <scalefactor>0.1</scalefactor>
+    <scalefactor>10</scalefactor>
 
     <!-- The workload -->
     <terminals>1</terminals>
